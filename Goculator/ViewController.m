@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "setting.h"
+#import "UIButton+UIButton_goculatorBackground.h"
 
 @interface ViewController ()
 
@@ -31,6 +32,8 @@
     for(int i=0;i<5;i++){
         UIButton*btn=[UIButton buttonWithType:UIButtonTypeCustom];
         [btn setBackgroundColor:[UIColor colorWithRed:248.0/255.0 green:114.0/255.0 blue:17.0/255.0 alpha:1]];
+        [btn setPadBackgroundColor:[UIColor colorWithRed:248.0/255.0 green:114.0/255.0 blue:17.0/255.0 alpha:1] forState:UIControlStateNormal];
+        [btn setPadBackgroundColor:[UIColor colorWithRed:190.0/255.0 green:57.0/255.0 blue:6.0/255.0 alpha:1] forState:UIControlStateHighlighted];
         btn.titleLabel.font = [UIFont systemFontOfSize:33];
         [btn addTarget:self action:@selector(padClick:) forControlEvents:UIControlEventTouchDown];
         btn.frame=CGRectMake(303,[UIScreen mainScreen].bounds.size.height-100-100*i-i, [UIScreen mainScreen].bounds.size.width-302, 100);
@@ -53,6 +56,8 @@
         UIButton*btn=[UIButton buttonWithType:UIButtonTypeCustom];
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [btn setBackgroundColor:[UIColor colorWithRed:189.0/255.0 green:190.0/255.0 blue:194.0/255.0 alpha:1]];
+        [btn setPadBackgroundColor:[UIColor colorWithRed:189.0/255.0 green:190.0/255.0 blue:194.0/255.0 alpha:1] forState:UIControlStateNormal];
+        [btn setPadBackgroundColor:[UIColor darkGrayColor] forState:UIControlStateHighlighted];
         btn.titleLabel.font = [UIFont systemFontOfSize:33];
         [btn addTarget:self action:@selector(padClick:) forControlEvents:UIControlEventTouchDown];
         if(i==0){
@@ -85,6 +90,8 @@
     UIButton*btn=[UIButton buttonWithType:UIButtonTypeCustom];
     [btn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     [btn setBackgroundColor:[UIColor colorWithRed:198.0/255.0 green:200.0/255.0 blue:202.0/255.0 alpha:1]];
+    [btn setPadBackgroundColor:[UIColor colorWithRed:189.0/255.0 green:190.0/255.0 blue:194.0/255.0 alpha:1] forState:UIControlStateNormal];
+    [btn setPadBackgroundColor:[UIColor darkGrayColor] forState:UIControlStateHighlighted];
     btn.titleLabel.font = [UIFont systemFontOfSize:28];
     [btn addTarget:self action:@selector(padClick:) forControlEvents:UIControlEventTouchDown];
     btn.frame=CGRectMake(0,[UIScreen mainScreen].bounds.size.height-504,302,100);

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		452B764F2049BF6300FE6159 /* UIButton+UIButton_goculatorBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 452B764E2049BF6300FE6159 /* UIButton+UIButton_goculatorBackground.m */; };
 		A63994FE2049542500F3A355 /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A63994E72049542200F3A355 /* Icon-App-40x40@2x.png */; };
 		A63994FF2049542500F3A355 /* Icon-App-20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A63994E82049542200F3A355 /* Icon-App-20x20@3x.png */; };
 		A63995002049542500F3A355 /* Icon-App-20x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = A63994E92049542200F3A355 /* Icon-App-20x20@1x.png */; };
@@ -60,6 +61,8 @@
 
 /* Begin PBXFileReference section */
 		452B764C2049B80400FE6159 /* setting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = setting.h; sourceTree = "<group>"; };
+		452B764D2049BF6300FE6159 /* UIButton+UIButton_goculatorBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+UIButton_goculatorBackground.h"; sourceTree = "<group>"; };
+		452B764E2049BF6300FE6159 /* UIButton+UIButton_goculatorBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+UIButton_goculatorBackground.m"; sourceTree = "<group>"; };
 		A63994E72049542200F3A355 /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
 		A63994E82049542200F3A355 /* Icon-App-20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@3x.png"; sourceTree = "<group>"; };
 		A63994E92049542200F3A355 /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
@@ -185,6 +188,8 @@
 				A6FD2C76204933DD00343F70 /* AppDelegate.m */,
 				A6FD2C78204933DD00343F70 /* ViewController.h */,
 				A6FD2C79204933DD00343F70 /* ViewController.m */,
+				452B764D2049BF6300FE6159 /* UIButton+UIButton_goculatorBackground.h */,
+				452B764E2049BF6300FE6159 /* UIButton+UIButton_goculatorBackground.m */,
 				452B764C2049B80400FE6159 /* setting.h */,
 				A6FD2C7B204933DD00343F70 /* Main.storyboard */,
 				A6FD2C81204933DD00343F70 /* Assets.xcassets */,
@@ -370,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452B764F2049BF6300FE6159 /* UIButton+UIButton_goculatorBackground.m in Sources */,
 				A6FD2C7A204933DD00343F70 /* ViewController.m in Sources */,
 				A6FD2C77204933DD00343F70 /* AppDelegate.m in Sources */,
 				A6FD2C88204933DD00343F70 /* main.m in Sources */,
