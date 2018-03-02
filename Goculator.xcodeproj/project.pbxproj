@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6FD2C77204933DD00343F70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD2C76204933DD00343F70 /* AppDelegate.m */; };
+		A6FD2C7A204933DD00343F70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD2C79204933DD00343F70 /* ViewController.m */; };
+		A6FD2C7D204933DD00343F70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FD2C7B204933DD00343F70 /* Main.storyboard */; };
+		A6FD2C80204933DD00343F70 /* Goculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6FD2C7E204933DD00343F70 /* Goculator.xcdatamodeld */; };
+		A6FD2C82204933DD00343F70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6FD2C81204933DD00343F70 /* Assets.xcassets */; };
+		A6FD2C85204933DD00343F70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FD2C83204933DD00343F70 /* LaunchScreen.storyboard */; };
+		A6FD2C88204933DD00343F70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD2C87204933DD00343F70 /* main.m */; };
+		A6FD2C92204933DD00343F70 /* GoculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD2C91204933DD00343F70 /* GoculatorTests.m */; };
+		A6FD2C9D204933DD00343F70 /* GoculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD2C9C204933DD00343F70 /* GoculatorUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6FD2C8E204933DD00343F70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6FD2C6A204933DD00343F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6FD2C71204933DD00343F70;
+			remoteInfo = Goculator;
+		};
+		A6FD2C99204933DD00343F70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6FD2C6A204933DD00343F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6FD2C71204933DD00343F70;
+			remoteInfo = Goculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6FD2C72204933DD00343F70 /* Goculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FD2C75204933DD00343F70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A6FD2C76204933DD00343F70 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A6FD2C78204933DD00343F70 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A6FD2C79204933DD00343F70 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A6FD2C7C204933DD00343F70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6FD2C7F204933DD00343F70 /* Goculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goculator.xcdatamodel; sourceTree = "<group>"; };
+		A6FD2C81204933DD00343F70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6FD2C84204933DD00343F70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6FD2C86204933DD00343F70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6FD2C87204933DD00343F70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6FD2C8D204933DD00343F70 /* GoculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FD2C91204933DD00343F70 /* GoculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoculatorTests.m; sourceTree = "<group>"; };
+		A6FD2C93204933DD00343F70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6FD2C98204933DD00343F70 /* GoculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FD2C9C204933DD00343F70 /* GoculatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoculatorUITests.m; sourceTree = "<group>"; };
+		A6FD2C9E204933DD00343F70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6FD2C6F204933DD00343F70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FD2C8A204933DD00343F70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FD2C95204933DD00343F70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6FD2C69204933DD00343F70 = {
+			isa = PBXGroup;
+			children = (
+				A6FD2C74204933DD00343F70 /* Goculator */,
+				A6FD2C90204933DD00343F70 /* GoculatorTests */,
+				A6FD2C9B204933DD00343F70 /* GoculatorUITests */,
+				A6FD2C73204933DD00343F70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6FD2C73204933DD00343F70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6FD2C72204933DD00343F70 /* Goculator.app */,
+				A6FD2C8D204933DD00343F70 /* GoculatorTests.xctest */,
+				A6FD2C98204933DD00343F70 /* GoculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6FD2C74204933DD00343F70 /* Goculator */ = {
+			isa = PBXGroup;
+			children = (
+				A6FD2C75204933DD00343F70 /* AppDelegate.h */,
+				A6FD2C76204933DD00343F70 /* AppDelegate.m */,
+				A6FD2C78204933DD00343F70 /* ViewController.h */,
+				A6FD2C79204933DD00343F70 /* ViewController.m */,
+				A6FD2C7B204933DD00343F70 /* Main.storyboard */,
+				A6FD2C81204933DD00343F70 /* Assets.xcassets */,
+				A6FD2C83204933DD00343F70 /* LaunchScreen.storyboard */,
+				A6FD2C86204933DD00343F70 /* Info.plist */,
+				A6FD2C87204933DD00343F70 /* main.m */,
+				A6FD2C7E204933DD00343F70 /* Goculator.xcdatamodeld */,
+			);
+			path = Goculator;
+			sourceTree = "<group>";
+		};
+		A6FD2C90204933DD00343F70 /* GoculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6FD2C91204933DD00343F70 /* GoculatorTests.m */,
+				A6FD2C93204933DD00343F70 /* Info.plist */,
+			);
+			path = GoculatorTests;
+			sourceTree = "<group>";
+		};
+		A6FD2C9B204933DD00343F70 /* GoculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6FD2C9C204933DD00343F70 /* GoculatorUITests.m */,
+				A6FD2C9E204933DD00343F70 /* Info.plist */,
+			);
+			path = GoculatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6FD2C71204933DD00343F70 /* Goculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FD2CA1204933DD00343F70 /* Build configuration list for PBXNativeTarget "Goculator" */;
+			buildPhases = (
+				A6FD2C6E204933DD00343F70 /* Sources */,
+				A6FD2C6F204933DD00343F70 /* Frameworks */,
+				A6FD2C70204933DD00343F70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Goculator;
+			productName = Goculator;
+			productReference = A6FD2C72204933DD00343F70 /* Goculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6FD2C8C204933DD00343F70 /* GoculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FD2CA4204933DD00343F70 /* Build configuration list for PBXNativeTarget "GoculatorTests" */;
+			buildPhases = (
+				A6FD2C89204933DD00343F70 /* Sources */,
+				A6FD2C8A204933DD00343F70 /* Frameworks */,
+				A6FD2C8B204933DD00343F70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6FD2C8F204933DD00343F70 /* PBXTargetDependency */,
+			);
+			name = GoculatorTests;
+			productName = GoculatorTests;
+			productReference = A6FD2C8D204933DD00343F70 /* GoculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6FD2C97204933DD00343F70 /* GoculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FD2CA7204933DD00343F70 /* Build configuration list for PBXNativeTarget "GoculatorUITests" */;
+			buildPhases = (
+				A6FD2C94204933DD00343F70 /* Sources */,
+				A6FD2C95204933DD00343F70 /* Frameworks */,
+				A6FD2C96204933DD00343F70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6FD2C9A204933DD00343F70 /* PBXTargetDependency */,
+			);
+			name = GoculatorUITests;
+			productName = GoculatorUITests;
+			productReference = A6FD2C98204933DD00343F70 /* GoculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6FD2C6A204933DD00343F70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Otis Lin";
+				TargetAttributes = {
+					A6FD2C71204933DD00343F70 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A6FD2C8C204933DD00343F70 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6FD2C71204933DD00343F70;
+					};
+					A6FD2C97204933DD00343F70 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6FD2C71204933DD00343F70;
+					};
+				};
+			};
+			buildConfigurationList = A6FD2C6D204933DD00343F70 /* Build configuration list for PBXProject "Goculator" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6FD2C69204933DD00343F70;
+			productRefGroup = A6FD2C73204933DD00343F70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6FD2C71204933DD00343F70 /* Goculator */,
+				A6FD2C8C204933DD00343F70 /* GoculatorTests */,
+				A6FD2C97204933DD00343F70 /* GoculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6FD2C70204933DD00343F70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FD2C85204933DD00343F70 /* LaunchScreen.storyboard in Resources */,
+				A6FD2C82204933DD00343F70 /* Assets.xcassets in Resources */,
+				A6FD2C7D204933DD00343F70 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FD2C8B204933DD00343F70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FD2C96204933DD00343F70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6FD2C6E204933DD00343F70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FD2C7A204933DD00343F70 /* ViewController.m in Sources */,
+				A6FD2C77204933DD00343F70 /* AppDelegate.m in Sources */,
+				A6FD2C88204933DD00343F70 /* main.m in Sources */,
+				A6FD2C80204933DD00343F70 /* Goculator.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FD2C89204933DD00343F70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FD2C92204933DD00343F70 /* GoculatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FD2C94204933DD00343F70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FD2C9D204933DD00343F70 /* GoculatorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6FD2C8F204933DD00343F70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6FD2C71204933DD00343F70 /* Goculator */;
+			targetProxy = A6FD2C8E204933DD00343F70 /* PBXContainerItemProxy */;
+		};
+		A6FD2C9A204933DD00343F70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6FD2C71204933DD00343F70 /* Goculator */;
+			targetProxy = A6FD2C99204933DD00343F70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6FD2C7B204933DD00343F70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6FD2C7C204933DD00343F70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6FD2C83204933DD00343F70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6FD2C84204933DD00343F70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6FD2C9F204933DD00343F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6FD2CA0204933DD00343F70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6FD2CA2204933DD00343F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW348Q679Z;
+				INFOPLIST_FILE = Goculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.Goculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6FD2CA3204933DD00343F70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW348Q679Z;
+				INFOPLIST_FILE = Goculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.Goculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6FD2CA5204933DD00343F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW348Q679Z;
+				INFOPLIST_FILE = GoculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.GoculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Goculator.app/Goculator";
+			};
+			name = Debug;
+		};
+		A6FD2CA6204933DD00343F70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW348Q679Z;
+				INFOPLIST_FILE = GoculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.GoculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Goculator.app/Goculator";
+			};
+			name = Release;
+		};
+		A6FD2CA8204933DD00343F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW348Q679Z;
+				INFOPLIST_FILE = GoculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.GoculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Goculator;
+			};
+			name = Debug;
+		};
+		A6FD2CA9204933DD00343F70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW348Q679Z;
+				INFOPLIST_FILE = GoculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.GoculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Goculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6FD2C6D204933DD00343F70 /* Build configuration list for PBXProject "Goculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FD2C9F204933DD00343F70 /* Debug */,
+				A6FD2CA0204933DD00343F70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FD2CA1204933DD00343F70 /* Build configuration list for PBXNativeTarget "Goculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FD2CA2204933DD00343F70 /* Debug */,
+				A6FD2CA3204933DD00343F70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FD2CA4204933DD00343F70 /* Build configuration list for PBXNativeTarget "GoculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FD2CA5204933DD00343F70 /* Debug */,
+				A6FD2CA6204933DD00343F70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FD2CA7204933DD00343F70 /* Build configuration list for PBXNativeTarget "GoculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FD2CA8204933DD00343F70 /* Debug */,
+				A6FD2CA9204933DD00343F70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A6FD2C7E204933DD00343F70 /* Goculator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A6FD2C7F204933DD00343F70 /* Goculator.xcdatamodel */,
+			);
+			currentVersion = A6FD2C7F204933DD00343F70 /* Goculator.xcdatamodel */;
+			path = Goculator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A6FD2C6A204933DD00343F70 /* Project object */;
+}
