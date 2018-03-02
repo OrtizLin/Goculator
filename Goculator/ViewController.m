@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "setting.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,8 @@
     [self answerViewInit];
     totalString=@"";
 }
+
+/* create +,-,x,/ button */
 -(void)funcButtonInit{
     for(int i=0;i<5;i++){
         UIButton*btn=[UIButton buttonWithType:UIButtonTypeCustom];
@@ -44,6 +47,7 @@
         [self.view addSubview:btn];
     }
 }
+/* create 0~9 , . button */
 -(void)padButtonInit{
     for(int i=0;i<11;i++){
         UIButton*btn=[UIButton buttonWithType:UIButtonTypeCustom];
@@ -76,6 +80,7 @@
         [self.view addSubview:btn];
     }
 }
+/* create AC button */
 -(void)otherFuncButtonInit{
     UIButton*btn=[UIButton buttonWithType:UIButtonTypeCustom];
     [btn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
@@ -86,26 +91,7 @@
     [btn setTitle:[NSString stringWithFormat:@"AC"] forState:UIControlStateNormal];
     [self.view addSubview:btn];
 }
--(void)padClick:(UIButton*)sender{
-    if([sender.titleLabel.text isEqualToString:@"AC"]){
-    totalString =@"";
-    textView.text=totalString;
-    }
-    else if([sender.titleLabel.text isEqualToString:@"="])
-        [self equalButtonClick];
-    else{
-    totalString = [totalString stringByAppendingString:sender.titleLabel.text];
-    textView.text=totalString;
-    }
-}
--(void)equalButtonClick{
-    totalString =[totalString stringByReplacingOccurrencesOfString:@"\u00d7" withString:@"*"];
-    totalString =[totalString stringByReplacingOccurrencesOfString:@"\u00f7" withString:@"/"];
-    NSDictionary*dict =@{@"Input":totalString};
-    NSArray*answer =[self postAPI:dict];
-    textView.text = [answer valueForKey:@"output"];
-    totalString=@"";
-}
+/* create answer background view and text view */
 -(void)answerViewInit{
     UIView *answerBackground =[[UIView alloc]init];
     answerBackground.backgroundColor=[UIColor blackColor];
@@ -120,9 +106,37 @@
     textView.editable = NO;
     [self.view addSubview:textView];
 }
-//Get answer from heroku
+/* button click */
+-(void)padClick:(UIButton*)sender{
+    if([sender.titleLabel.text isEqualToString:@"AC"]){
+    totalString =@"";
+    textView.text=totalString;
+    }
+    else if([sender.titleLabel.text isEqualToString:@"="])
+        [self equalButtonClick];
+    else{
+    totalString = [totalString stringByAppendingString:sender.titleLabel.text];
+    textView.text=totalString;
+    }
+}
+/* transfer calculation */
+-(void)equalButtonClick{
+    if(![totalString isEqualToString:@""]){
+    totalString =[totalString stringByReplacingOccurrencesOfString:@"\u00d7" withString:@"*"];
+    totalString =[totalString stringByReplacingOccurrencesOfString:@"\u00f7" withString:@"/"];
+    NSDictionary*dict =@{@"Input":totalString};
+    NSArray*answer =[self postAPI:dict];
+        if(answer==NULL)
+            textView.text = @"ERROR !!";
+        else
+            textView.text = [answer valueForKey:@"output"];
+    totalString=@"";
+    }
+}
+
+/* Get answer from heroku */
 -(NSArray*)postAPI:(NSDictionary *)dict{
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://fierce-hamlet-80512.herokuapp.com/calc"]]
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:heroku_url]]
                                                        cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                        timeoutInterval:100.0];
     [request setHTTPMethod:@"POST"];

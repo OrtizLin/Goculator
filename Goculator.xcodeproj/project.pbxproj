@@ -59,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		452B764C2049B80400FE6159 /* setting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = setting.h; sourceTree = "<group>"; };
 		A63994E72049542200F3A355 /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
 		A63994E82049542200F3A355 /* Icon-App-20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@3x.png"; sourceTree = "<group>"; };
 		A63994E92049542200F3A355 /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
@@ -184,6 +185,7 @@
 				A6FD2C76204933DD00343F70 /* AppDelegate.m */,
 				A6FD2C78204933DD00343F70 /* ViewController.h */,
 				A6FD2C79204933DD00343F70 /* ViewController.m */,
+				452B764C2049B80400FE6159 /* setting.h */,
 				A6FD2C7B204933DD00343F70 /* Main.storyboard */,
 				A6FD2C81204933DD00343F70 /* Assets.xcassets */,
 				A6FD2C83204933DD00343F70 /* LaunchScreen.storyboard */,
@@ -537,7 +539,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VW348Q679Z;
 				INFOPLIST_FILE = Goculator/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.Goculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -552,7 +554,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VW348Q679Z;
 				INFOPLIST_FILE = Goculator/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.Goculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
