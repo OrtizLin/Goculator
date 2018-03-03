@@ -1,10 +1,10 @@
 # Goculator 
 
-#### What's Goculator ?
+## What's Goculator ?
 
 Goculator is a simple calculator app with add, minus, times, divided, to practice golang api which running on heroku server.
 
-#### How does it work ?
+## How does it work ?
 
 Post string  to server .
 
