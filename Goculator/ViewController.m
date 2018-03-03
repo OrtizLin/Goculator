@@ -91,7 +91,7 @@
     [btn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     [btn setBackgroundColor:[UIColor colorWithRed:198.0/255.0 green:200.0/255.0 blue:202.0/255.0 alpha:1]];
     [btn setPadBackgroundColor:[UIColor colorWithRed:189.0/255.0 green:190.0/255.0 blue:194.0/255.0 alpha:1] forState:UIControlStateNormal];
-    [btn setPadBackgroundColor:[UIColor darkGrayColor] forState:UIControlStateHighlighted];
+    [btn setPadBackgroundColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
     btn.titleLabel.font = [UIFont systemFontOfSize:28];
     [btn addTarget:self action:@selector(padClick:) forControlEvents:UIControlEventTouchDown];
     btn.frame=CGRectMake(0,[UIScreen mainScreen].bounds.size.height-504,302,100);
