@@ -87,6 +87,7 @@
 }
 /* create AC button */
 -(void)otherFuncButtonInit{
+    for(int i=0;i<3; i++){
     UIButton*btn=[UIButton buttonWithType:UIButtonTypeCustom];
     [btn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     [btn setBackgroundColor:[UIColor colorWithRed:198.0/255.0 green:200.0/255.0 blue:202.0/255.0 alpha:1]];
@@ -94,9 +95,20 @@
     [btn setPadBackgroundColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
     btn.titleLabel.font = [UIFont systemFontOfSize:28];
     [btn addTarget:self action:@selector(padClick:) forControlEvents:UIControlEventTouchDown];
-    btn.frame=CGRectMake(0,[UIScreen mainScreen].bounds.size.height-504,302,100);
-    [btn setTitle:[NSString stringWithFormat:@"AC"] forState:UIControlStateNormal];
+        if(i==0){
+            [btn setTitle:[NSString stringWithFormat:@"AC"] forState:UIControlStateNormal];
+            btn.frame=CGRectMake(0,[UIScreen mainScreen].bounds.size.height-504,100,100);
+        }
+        else if(i ==1){
+            [btn setTitle:[NSString stringWithFormat:@"("] forState:UIControlStateNormal];
+            btn.frame=CGRectMake(101,[UIScreen mainScreen].bounds.size.height-504,100,100);
+        }
+        else{
+            [btn setTitle:[NSString stringWithFormat:@")"] forState:UIControlStateNormal];
+            btn.frame=CGRectMake(202,[UIScreen mainScreen].bounds.size.height-504,100,100);
+        }
     [self.view addSubview:btn];
+    }
 }
 /* create answer background view and text view */
 -(void)answerViewInit{
