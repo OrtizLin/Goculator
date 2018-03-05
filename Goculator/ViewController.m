@@ -117,13 +117,17 @@
     answerBackground.frame=CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-505);
     [self.view addSubview:answerBackground];
     
-    textView= [[UITextView alloc]initWithFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height-606, [UIScreen mainScreen].bounds.size.width, 100)];
+    textView= [[UITextView alloc]initWithFrame:CGRectMake(0,answerBackground.frame.size.height-100, [UIScreen mainScreen].bounds.size.width, 100)];
     textView.backgroundColor=[UIColor blackColor];
     textView.textColor=[UIColor whiteColor];
     [textView setFont:[UIFont systemFontOfSize:25]];
     textView.delegate =self;
     textView.editable = NO;
-    [self.view addSubview:textView];
+    [answerBackground addSubview:textView];
+    
+    UISwipeGestureRecognizer *gestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeHandler)];
+    gestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+    [answerBackground addGestureRecognizer:gestureRecognizer];
 }
 /* button click */
 -(void)padClick:(UIButton*)sender{
@@ -182,6 +186,16 @@
     return JsonArray;
 }
 
+#pragma mark - others
+-(void)swipeHandler{
+    if(totalString.length !=0){
+       totalString = [totalString substringToIndex:[totalString length]-1];
+        textView.text=totalString;
+    }
+}
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
+    return YES;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
