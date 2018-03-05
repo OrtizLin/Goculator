@@ -14,7 +14,7 @@ Post string  to server .
 
 And using [golang](https://golang.org/) to transfer string to numbers. After calculate , return answer with string and show on Goculator answer textfield.
 
-![image](https://i.imgur.com/OuHBX0l.png)
+![image](https://i.imgur.com/oELDKMX.png)
 
 
 
